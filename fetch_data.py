@@ -5,8 +5,7 @@ import time
 
 statuses = pickle.load(open('statuses.p', 'rb'))
 
-init_block = min(statuses.keys()) - 1
-curr_block = init_block
+curr_block = min(statuses.keys()) - 1
 
 while curr_block >= 0:
     try:
